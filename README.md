@@ -1,0 +1,30 @@
+## Análisis de Diseño: Sistema de Gestión de Vehículos de Transporte
+Este sistema ha sido desarrollado aplicando los principios de la Programación Orientada a Objetos (POO) para resolver la necesidad de administrar una flota diversa de transporte de manera eficiente.
+
+## Arquitectura de Objetos y Especialización
+La solución se fundamenta en un modelo de jerarquía de clases. Se estableció un concepto general que representa las propiedades compartidas por cualquier unidad de transporte. A partir de esta base, se aplicó la herencia para crear categorías específicas según el tipo de servicio (transporte masivo, servicio individual o transporte de carga). Esta estructura permite que el sistema crezca de forma organizada, manteniendo la lógica común en la cima de la jerarquía y los detalles particulares en cada rama especializada.
+
+## Dinamismo y Encapsulamiento
+Para garantizar la seguridad de los datos, el diseño utiliza el encapsulamiento, asegurando que la información de cada vehículo solo sea modificada a través de métodos controlados. Además, se implementó el polimorfismo mediante un método de visualización de datos. Esto permite que el sistema genere reportes distintos de forma automática: si el objeto es de una categoría de carga, mostrará detalles de capacidad; si es de pasajeros, mostrará datos de rutas o cupos, todo bajo una misma instrucción de comando.
+
+## Persistencia y Experiencia de Usuario
+El sistema no depende únicamente de la ejecución temporal, sino que integra un módulo de manejo de archivos (formato de texto o JSON). Esto asegura que cada vehículo registrado sea almacenado permanentemente en un soporte físico, permitiendo la recuperación de la flota completa cada vez que se inicie el programa. Finalmente, la interacción se centraliza en un entorno de control que permite al usuario navegar entre las funciones de registro y consulta de manera intuitiva y fluida.
+
+## Análisis de Diseño: Plataforma de Gestión Académica
+
+El sistema ha sido diseñado bajo el paradigma de **Programación Orientada a Objetos (POO)**, estructurando la solución en tres capas fundamentales: jerarquía de entidades, comportamiento dinámico y persistencia de datos.
+
+### Estructura Jerárquica y Abstracción
+
+Se definió una entidad principal que agrupa las características generales de cualquier usuario del sistema. A través del mecanismo de **herencia**, se derivaron dos especializaciones: una para el cuerpo docente y otra para el cuerpo estudiantil. Esta organización permite que los componentes compartidos se gestionen en un solo lugar, mientras que los datos exclusivos de cada rol se mantienen aislados y protegidos mediante **encapsulamiento**.
+
+### Comportamiento y Polimorfismo
+
+Para la visualización de la información, se implementó el concepto de **polimorfismo**. Esto significa que el sistema invoca una misma acción de "mostrar perfil", pero el resultado se adapta automáticamente dependiendo de si el sujeto es un profesor o un estudiante. Esta técnica garantiza que la interfaz de usuario sea consistente pero rica en detalles específicos según el contexto del usuario consultado.
+
+### Gestión de Información y Búsqueda
+
+La robustez del programa reside en su capacidad de **manejo de archivos**. En lugar de mantener los datos únicamente en la memoria volátil, el sistema sincroniza la información con un soporte físico (formato de texto o estructurado), permitiendo que los registros se conserven tras finalizar la ejecución.
+
+Finalmente, la lógica de interacción permite realizar consultas precisas mediante la identificación única de cada integrante, asegurando que la recuperación de datos sea rápida y exacta dentro de la base de datos local.
+
