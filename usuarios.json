@@ -1,0 +1,22 @@
+[
+    {
+        "tipo": "Estudiante",
+        "Id_usuario": "2024101",
+        "Nombre": "Carlos Andres Villa",
+        "Correo": "carlos.villa@cuc.edu.co",
+        "Contraseña": "estudiante2026",
+        "Codigo Estudiantil": "CUC-9988",
+        "Curso Inscrito ": "Programación de Objetos",
+        "Progreso": "75%"
+    },
+    {
+        "tipo": "Profesor",
+        "Id_usuario": "1143200",
+        "Nombre": "Dra. Elena Martínez",
+        "Correo": "emartinez@cuc.edu.co",
+        "Contraseña": "profe_segura123",
+        "Especializacion": "Ingeniería de Software",
+        "Cursos Impartidos": "Algoritmos, Estructura de Datos",
+        "Calificacion": "4.9"
+    }
+]

@@ -1,0 +1,27 @@
+[
+    {
+        "tipo": "Bus",
+        "placa": "UYA-721",
+        "marca": "Mercedes-Benz",
+        "modelo": "2024",
+        "capacidad": "42",
+        "ruta": "Circular Norte 1"
+    },
+    {
+        "tipo": "Taxi",
+        "placa": "STK-456",
+        "marca": "Hyundai Grand i10",
+        "modelo": "2022",
+        "turno": "Dia",
+        "aire": "Si"
+    },
+    {
+        "tipo": "camion",
+        "placa": "WPX-990",
+        "marca": "Kenworth",
+        "modelo": "2020",
+        "ruta": "Barranquilla - Cartagena",
+        "capacidad de carga": "15 Toneladas",
+        "peso maximo": "32,000 kg"
+    }
+]
